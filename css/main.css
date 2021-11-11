@@ -1,0 +1,20 @@
+ nav img{
+    width: 10%;
+    height: auto;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    background-color: #757194;
+}
+
+nav a,
+nav a:link,
+nav a:visited{
+    display: inline-block;
+    text-decoration: none;
+    justify-content:start;
+}
