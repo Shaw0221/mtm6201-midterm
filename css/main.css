@@ -1,44 +1,68 @@
- nav img{
-    width: 10%;
+/* Navigation */
+nav img{
+   width: 145px;
+   margin: 0;
+   padding: 0;
+}
+
+.logo{
+width: 100px;
+height:100px;
+padding: 0;
+border-radius: 50%;
+margin-top: -60px;
+margin-left: -50px;
 }
 
 .navigation-container{
     background-color:#747093;
+    margin: 0;
+    padding: 0;
+    width:100%;
 }
 
 nav ul{
-    display: flex;
+    display: inline-block;
     list-style: none;
     padding: 0;
-    text-align: center;
+    margin: 0;
+    text-align: start;
 }
 
 nav ul li{
-    margin: 5px 0;
+    margin-left: 70px;
+    padding-top: 50px ;
+    display: inline;
+    float: left;
 }
 
-nav a{
-    padding: 5px 5px;
+nav li a{
     color:black;
-    font-size: 2rem;
-    justify-content: center;
+    font-size: 4rem;
+    text-align: start;
     margin: 10px;
+    display: block;
 }
 
 
 .navigation-container a,
 .navigation-container a:link,
 .navigation-container a:visited{
-    display: inline-block;
     text-decoration: none;
-    text-transform: uppercase;
+    transition: color 0.5s;
+    flex-wrap: wrap;
 }
 
-.navigation-container a:hover,
+.navigation-container a:hover{
+    color: white;
+    animation-duration: .5s;
+}
+
 .navigation-container a:active{
-    color:white;
+    color: white;
 }
 
+/* Main Content*/
 body{
     background-color: #420082;
 }
@@ -46,9 +70,43 @@ body{
 .textcontainer{
     background-color: #c6e1ac;
     font-size: 4rem;
+    width:1500px;
+    height:690px;
+    margin-left: 500px;
+    text-align: start;
+}
+
+.textcontainer h2{
+    text-align: start;
 }
 
 .icecreamlady{
     width:25%;
     float:left;
+    animation-name:fadeIn;
+    animation-duration:2s;
+    max-width: 100%;
+    height:auto;
+    margin:0;
+}
+
+.textcontainer-about{
+    background-color: #c6e1ac;
+    font-size: 4rem;
+    width:1500px;
+    height:690px;
+}
+
+.textcontainer-contact{
+    background-color: #c6e1ac;
+    font-size: 4rem;
+    width:1500px;
+    height:690px;
+}
+
+/* Animations */
+
+@keyframes fadeIn{
+0%{opacity:0;}
+100%{opacity:1;}
 }
