@@ -99,11 +99,44 @@ body{
 
 .textcontainer-contact{
     background-color: #c6e1ac;
-    font-size: 4rem;
+    font-size: 2rem;
     width:1500px;
     height:690px;
 }
+/* Contact Form*/
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+  }
+  
+  input[type=submit] {
+    background-color: #420082;
+    color: white;
+    padding: 12px 20px;
+    margin-left: 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #420082
+  }
+  
+  .container {
+    border-radius: 5px;
+    padding: 20px;
+  }
 
+  label{
+      margin-left: 1rem;
+  }
 /* Animations */
 
 @keyframes fadeIn{
