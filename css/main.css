@@ -1,20 +1,54 @@
  nav img{
     width: 10%;
-    height: auto;
+}
+
+.navigation-container{
+    background-color:#747093;
 }
 
 nav ul{
     display: flex;
-    list-style-type: none;
+    list-style: none;
     padding: 0;
-    margin: 0;
-    background-color: #757194;
+    text-align: center;
 }
 
-nav a,
-nav a:link,
-nav a:visited{
+nav ul li{
+    margin: 5px 0;
+}
+
+nav a{
+    padding: 5px 5px;
+    color:black;
+    font-size: 2rem;
+    justify-content: center;
+    margin: 10px;
+}
+
+
+.navigation-container a,
+.navigation-container a:link,
+.navigation-container a:visited{
     display: inline-block;
     text-decoration: none;
-    justify-content:start;
+    text-transform: uppercase;
+}
+
+.navigation-container a:hover,
+.navigation-container a:active{
+    color:white;
+}
+
+body{
+    background-color: #420082;
+}
+
+.textcontainer{
+    background-color: #c6e1ac;
+    font-size: 4rem;
+}
+
+.icecreamlady{
+    width:25%;
+    float:left;
 }
